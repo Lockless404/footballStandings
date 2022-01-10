@@ -1,0 +1,69 @@
+.App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(52, 187, 34, 0.89);
+}
+
+header {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5%;
+  padding-top: 1rem;
+  width: 90%;
+}
+
+.headImg {
+  height: 5rem;
+  width: 5rem;
+}
+
+h1 {
+  color: aliceblue;
+}
+
+hr {
+  border: 1px solid #fff;
+  margin: 1rem 0;
+}
+
+section {
+  width: 90%;
+  margin: 0 5%;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: aliceblue;
+  border: 1px solid rgb(10, 35, 56);
+  width: 40%;
+  border-radius: 8% 8% 0 0;
+  margin: 5%;
+}
+
+img {
+  width: 100%;
+}
+
+select {
+  width: 100%;
+  background-color: aliceblue;
+  border: 1px solid #000;
+}
+
+button {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid rgb(10, 35, 56);
+  background-color: rgb(10, 35, 56);
+  color: aliceblue;
+  cursor: pointer;
+}
