@@ -1,10 +1,12 @@
 import React from 'react'
 
-const League = () => {
+const League = (props) => {
+  const leagues = props.data;
 
   return (
     <form>
-      <img className='cardPic' src="https://a.espncdn.com/i/leaguelogos/soccer/500/23.png" alt="" />
+      <img className='cardPic' src={leagues.logos.light} alt="" />
+      <h4>{leagues.name}</h4>
       <select name="year" required>
         <option value="" defaultValue>Year</option>
         <option value="2021">2021</option>
