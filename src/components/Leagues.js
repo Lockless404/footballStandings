@@ -40,7 +40,7 @@ const Leagues = () => {
 
   
 
-  console.log(leagues.leagues.data);
+  // console.log(leagues.leagues.data);
 
   return (
     <div>
