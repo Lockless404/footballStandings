@@ -8,8 +8,6 @@ const Table = () => {
 
   const dataa = useSelector((state) => state.tableReducer);
 
-  console.log(dataa.table.standings);
-
   const data = {
     "status":true,
     "data":{
@@ -186,7 +184,7 @@ const Table = () => {
       <Header />
       <hr />
       <section>
-        <h2>{data.data.season}-{data.data.season+1} Season</h2>
+        {/* <h2>{data.data.season}-{data.data.season+1} Season</h2> */}
         <table>
           <thead>
             <tr>
@@ -203,10 +201,9 @@ const Table = () => {
             </tr>
           </thead>
           <tbody>
-            <TableLine key={data.data.standings[0].team.id} data={data.data.standings[0]} />
-            {/* {dataa.table.standings.map((standing) => (
+            {dataa.table.map((standing) => (
               <TableLine key={standing.team.id} data={standing} />
-            ))} */}
+            ))}
           </tbody>
         </table>
       </section>

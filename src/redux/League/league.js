@@ -19,7 +19,9 @@ export const getLeagues = (payload) => ({
 export const getLeaguesFromApi = () => async (dispatch) => {
   const pull = await fetch(leaguesUrl);
   const res = await pull.json();
-  dispatch(getLeagues(res.data));
+  const duds = ['aus.1', 'bra.1', 'por.1', 'chn.1', 'idn.1', 'mys.1', 'sgp.1', 'tha.1', 'tur.1', 'uga.1'];
+  
+  dispatch(getLeagues(res.data.filter(({id}) => !duds.includes(id))));
 };
 
 // Create a reducer

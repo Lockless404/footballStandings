@@ -35,6 +35,9 @@ const Leagues = () => {
   
 
   const leagues = useSelector((state) => state.leaguesReducer);
+  
+
+
 
   console.log(leagues.leagues);
 
