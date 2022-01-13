@@ -134,11 +134,7 @@ table, th, td {
 
 @media only screen and (max-width: 600px) {
   header {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-between;
     margin: 0 3%;
-    padding-top: 1rem;
     width: 93%;
   }
 

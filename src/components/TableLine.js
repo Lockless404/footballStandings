@@ -1,7 +1,6 @@
 import React from 'react'
 
 const TableLine = (props) => {
-
   const standings = props.data;
 
   return (
@@ -22,4 +21,4 @@ const TableLine = (props) => {
   )
 }
 
-export default TableLine
+export default TableLine;
