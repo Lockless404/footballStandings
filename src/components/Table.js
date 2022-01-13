@@ -207,7 +207,8 @@ const Table = () => {
           </tbody>
         </table>
       </section>
-      <Link to="/">Back</Link>
+      <Link className='backA' to="/">Back</Link>
+      <hr className='end' />
     </div>
   )
 }

@@ -8,7 +8,7 @@ const TableLine = (props) => {
     <>
       <tr>
         <td>{standings.stats[8].value}</td>
-        <td><img src={standings.team.logos[0].href} alt="Badge Logo" /></td>
+        <td><img className='clubLogos' src={standings.team.logos[0].href} alt="Badge Logo" /></td>
         <td>{standings.team.name}</td>
         <td>{standings.stats[0].value}</td>
         <td>{standings.stats[2].value}</td>
