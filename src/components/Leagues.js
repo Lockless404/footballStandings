@@ -31,16 +31,19 @@ const Leagues = () => {
       },
     ]
   }
+
   
-  useEffect(() => {
-    dispatch(getLeaguesFromApi());
-  }, []);
 
   const leagues = useSelector((state) => state.leaguesReducer);
 
-  
+  console.log(leagues.leagues);
 
-  // console.log(leagues.leagues.data);
+  useEffect(() => {
+    if (leagues) {
+      dispatch(getLeaguesFromApi());
+    }
+  }, []);
+
 
   return (
     <div>
@@ -48,7 +51,7 @@ const Leagues = () => {
         <Header />
         <hr />
         <section className="leagues">
-          {data.data.map((league) => (
+          {leagues.leagues.map((league) => (
             <League key={league.id} id={league.id} data={league}/>
           ))}
         </section>

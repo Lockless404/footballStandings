@@ -19,7 +19,7 @@ export const getLeagues = (payload) => ({
 export const getLeaguesFromApi = () => async (dispatch) => {
   const pull = await fetch(leaguesUrl);
   const res = await pull.json();
-  dispatch(getLeagues(res));
+  dispatch(getLeagues(res.data));
 };
 
 // Create a reducer

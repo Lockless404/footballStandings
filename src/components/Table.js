@@ -6,9 +6,9 @@ import { useSelector } from 'react-redux';
 
 const Table = () => {
 
-  const dataa = useSelector((state) => state.tableReducer.table);
+  const dataa = useSelector((state) => state.tableReducer);
 
-  console.log(dataa.data.standings);
+  console.log(dataa.table.standings);
 
   const data = {
     "status":true,
@@ -204,7 +204,7 @@ const Table = () => {
           </thead>
           <tbody>
             <TableLine key={data.data.standings[0].team.id} data={data.data.standings[0]} />
-            {/* {dataa.data.standings.map((standing) => (
+            {/* {dataa.table.standings.map((standing) => (
               <TableLine key={standing.team.id} data={standing} />
             ))} */}
           </tbody>

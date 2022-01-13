@@ -15,9 +15,8 @@ export const getTable = (payload) => ({
 // Action creator that return a function
 export const getTableFromApi = (year, id) => async (dispatch) => {
   const pull = await fetch(`https://api-football-standings.azharimm.site/leagues/${id}/standings?season=${year}&sort=asc`);
-  const response = await pull.json();
-  const res = Object.entries(response)
-  dispatch(getTable(res));
+  const res = await pull.json();
+  dispatch(getTable(res.data));
 };
 
 // Create a reducer
