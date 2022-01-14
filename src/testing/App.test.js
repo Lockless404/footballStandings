@@ -2,14 +2,14 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import store from '../redux/configureStore';
-import TableLine from '../components/TableLine';
+import App from '../App';
 
-describe('Table Component test', () => {
-  it('Renders table items', () => {
+describe('Leagues Component test', () => {
+  it('Renders league items', () => {
     const app = renderer
       .create(
         <Provider store={store}>
-          <TableLine />
+          <App />
         </Provider>,
       )
       .toJSON();

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Leagues Component test Renders league items 1`] = `
+<div>
+  <div
+    className="App"
+  >
+    <header>
+      <img
+        alt=""
+        className="headImg"
+        src="https://freerangestock.com/sample/93186/football-icon-means-player-soccer-and-symbol.jpg"
+      />
+      <h1>
+        Football Standings
+      </h1>
+    </header>
+    <hr />
+    <section
+      className="leagues"
+    />
+  </div>
+</div>
+`;
