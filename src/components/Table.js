@@ -29,7 +29,19 @@ const Table = () => {
           </thead>
           <tbody>
             {dataa.table.map((standing) => (
-              <TableLine key={standing.team.id} data={standing} />
+              <TableLine
+                key={standing.team.id}
+                rank={standing.stats[8].value}
+                logo={standing.team.logos[0].href}
+                name={standing.team.name}
+                wins={standing.stats[0].value}
+                draws={standing.stats[2].value}
+                losses={standing.stats[1].value}
+                gD={standing.stats[9].value}
+                gF={standing.stats[4].value}
+                gA={standing.stats[5].value}
+                points={standing.stats[6].value}
+              />
             ))}
           </tbody>
         </table>

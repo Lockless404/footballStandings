@@ -21,7 +21,12 @@ const Leagues = () => {
         <hr />
         <section className="leagues">
           {leagues.leagues.map((league) => (
-            <League key={league.id} id={league.id} data={league} />
+            <League
+              key={league.id}
+              id={league.id}
+              name={league.name}
+              logos={league.logos.light}
+            />
           ))}
         </section>
       </div>

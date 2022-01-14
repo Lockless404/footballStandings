@@ -1,17 +1,21 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { getTableFromApi } from '../redux/Table/table';
 
-const League = (props) => {
-  const { id, name, logos } = props.data;
+const League = (
+  {
+    id,
+    name,
+    logos,
+  },
+) => {
   const dispatch = useDispatch();
-  const data = useSelector((state) => state.tableReducer);
 
   return (
     <form id={id}>
-      <img className="cardPic" src={logos.light} alt="" />
+      <img className="cardPic" src={logos} alt="" />
       <h4>{name}</h4>
       <select name="season" required>
         <option value="" defaultValue>Season</option>
