@@ -58,6 +58,6 @@ League.defaultProps = {
   id: 'eng.1',
   name: 'English Premier League',
   logos: 'https://a.espncdn.com/i/leaguelogos/soccer/500/23.png',
-}
+};
 
 export default League;

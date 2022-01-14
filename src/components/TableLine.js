@@ -18,7 +18,7 @@ const TableLine = (
   <>
     <tr>
       <td>{rank}</td>
-      <td><img className='clubLogos' src={logo} alt="Badge Logo" /></td>
+      <td><img className="clubLogos" src={logo} alt="Badge Logo" /></td>
       <td>{name}</td>
       <td>{wins}</td>
       <td>{draws}</td>
@@ -55,6 +55,6 @@ TableLine.defaultProps = {
   gF: '1000',
   gA: '0',
   points: '119',
-}
+};
 
 export default TableLine;
