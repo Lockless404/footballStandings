@@ -1,17 +1,18 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import React from 'react';
 import {  useDispatch, useSelector } from 'react-redux';
 import { getTableFromApi } from '../redux/Table/table';
 
 const League = (props) => {
-  const leagues = props.data;
+  const {id, name, logos} = props.data;
   const dispatch = useDispatch();
   const data = useSelector((state) => state.tableReducer);
 
   return (
-    <form id={leagues.id}>
-      <img className='cardPic' src={leagues.logos.light} alt="" />
-      <h4>{leagues.name}</h4>
+    <form id={id}>
+      <img className='cardPic' src={logos.light} alt="" />
+      <h4>{name}</h4>
       <select name="season" required>
         <option value="" defaultValue>Season</option>
         <option value="2020">2020</option>
@@ -27,11 +28,11 @@ const League = (props) => {
       <Link
         to="/table"
         onClick={(e) => {
-          const id = e.target.parentElement.id;
-          const value = e.target.previousElementSibling.value;
-          if (value == '') {
+          const {id} = e.target.parentElement;
+          const {value} = e.target.previousElementSibling;
+          if (value === '') {
             e.preventDefault();
-            alert('Please select season')
+            alert('Please select season');
           } else {
             if (data) {
               dispatch(getTableFromApi(value, id));
@@ -42,7 +43,13 @@ const League = (props) => {
         View Standings
       </Link>
     </form>
-  )
-}
+  );
+};
 
-export default League
+League.propTypes = {
+  id: PropTypes.string,
+  name: PropTypes.string,
+  logos: PropTypes.string,
+};
+
+export default League;

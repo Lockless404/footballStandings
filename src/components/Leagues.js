@@ -1,5 +1,4 @@
-import React from 'react'
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Header from './Header';
 import League from './League';
@@ -8,7 +7,7 @@ import { getLeaguesFromApi } from '../redux/League/league';
 const Leagues = () => {
   const dispatch = useDispatch();
   const leagues = useSelector((state) => state.leaguesReducer);
-  
+
   useEffect(() => {
     if (leagues) {
       dispatch(getLeaguesFromApi());

@@ -1,7 +1,7 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
-import leaguesReducer from './League/league';
-import tableReducer from './Table/table';
+import leaguesReducer from '../../redux/League/league';
+import tableReducer from '../../redux/Table/table';
 
 const reducer = combineReducers({
   leaguesReducer,
