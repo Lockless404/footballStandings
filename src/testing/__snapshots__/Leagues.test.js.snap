@@ -16,6 +16,13 @@ exports[`Leagues Component test Renders league items 1`] = `
       </h1>
     </header>
     <hr />
+    <input
+      className="input"
+      onChange={[Function]}
+      placeholder="Search by League Name"
+      type="text"
+      value=""
+    />
     <section
       className="leagues"
     />

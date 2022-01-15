@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Leagues Component test Renders league items 1`] = `
+<tr>
+  <td>
+    1
+  </td>
+  <td>
+    <img
+      alt="Badge Logo"
+      className="clubLogos"
+      src="https://a.espncdn.com/i/leaguelogos/soccer/500/23.png"
+    />
+  </td>
+  <td>
+    Chelsea
+  </td>
+  <td>
+    38
+  </td>
+  <td>
+    0
+  </td>
+  <td>
+    0
+  </td>
+  <td>
+    1000
+  </td>
+  <td>
+    1000
+  </td>
+  <td>
+    0
+  </td>
+  <td>
+    119
+  </td>
+</tr>
+`;
+
+exports[`Table Component test Renders TableLie items 1`] = `
+<tr>
+  <td>
+    1
+  </td>
+  <td>
+    <img
+      alt="Badge Logo"
+      className="clubLogos"
+      src="https://a.espncdn.com/i/leaguelogos/soccer/500/23.png"
+    />
+  </td>
+  <td>
+    Chelsea
+  </td>
+  <td>
+    38
+  </td>
+  <td>
+    0
+  </td>
+  <td>
+    0
+  </td>
+  <td>
+    1000
+  </td>
+  <td>
+    1000
+  </td>
+  <td>
+    0
+  </td>
+  <td>
+    119
+  </td>
+</tr>
+`;
+
+exports[`Table Component test Renders TableLine items 1`] = `
+<tr>
+  <td>
+    1
+  </td>
+  <td>
+    <img
+      alt="Badge Logo"
+      className="clubLogos"
+      src="https://a.espncdn.com/i/leaguelogos/soccer/500/23.png"
+    />
+  </td>
+  <td>
+    Chelsea
+  </td>
+  <td>
+    38
+  </td>
+  <td>
+    0
+  </td>
+  <td>
+    0
+  </td>
+  <td>
+    1000
+  </td>
+  <td>
+    1000
+  </td>
+  <td>
+    0
+  </td>
+  <td>
+    119
+  </td>
+</tr>
+`;
+
+exports[`Table Component test Renders league items 1`] = `
+<tr>
+  <td>
+    1
+  </td>
+  <td>
+    <img
+      alt="Badge Logo"
+      className="clubLogos"
+      src="https://a.espncdn.com/i/leaguelogos/soccer/500/23.png"
+    />
+  </td>
+  <td>
+    Chelsea
+  </td>
+  <td>
+    38
+  </td>
+  <td>
+    0
+  </td>
+  <td>
+    0
+  </td>
+  <td>
+    1000
+  </td>
+  <td>
+    1000
+  </td>
+  <td>
+    0
+  </td>
+  <td>
+    119
+  </td>
+</tr>
+`;
