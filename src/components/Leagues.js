@@ -41,8 +41,8 @@ const Leagues = () => {
                   />
                 ))
             )
-              : (
-                leagues.leagues.map((league) => (
+            : (
+              leagues.leagues.map((league) => (
                 <League
                   key={league.id}
                   id={league.id}
