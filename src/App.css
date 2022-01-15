@@ -4,6 +4,9 @@
   width: 100%;
   box-sizing: border-box;
   background-color: rgba(52, 187, 34, 0.89);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header {
@@ -29,9 +32,20 @@ hr {
   margin: 1rem 0;
 }
 
+input {
+  margin: 1rem;
+  background-color: rgba(52, 187, 34, 0.89);
+  font-size: 1rem;
+  border: #000;
+}
+
+::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+
 section {
-  width: 94%;
-  margin: 0 3%;
+  width: 100%;
   padding-bottom: 1rem;
   display: flex;
   flex-direction: row;
@@ -43,11 +57,13 @@ form {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: aliceblue;
-  border: 1px solid rgb(10, 35, 56);
   width: 20%;
-  border-radius: 8% 8% 0 0;
   margin: 2%;
+}
+
+form:nth-child(4n+2),
+form:nth-child(4n+3) {
+  background-color: rgb(171, 238, 162);
 }
 
 img {
@@ -62,7 +78,7 @@ h4 {
 
 select {
   width: 101%;
-  background-color: aliceblue;
+  background-color: inherit;
   border: 1px solid #000;
   height: 10%;
 }
@@ -97,15 +113,21 @@ tr {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  color: #fff;
+}
+
+tr:nth-child(4n+2),
+tr:nth-child(4n+4) {
+  background-color: rgb(171, 238, 162);
+  color: #000;
 }
 
 td {
   font-size: 1.3rem;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-wrap: break-word;
+  display: inline-block;
+  word-break: break-word;
+  color: inherit;
 }
 
 th,
@@ -117,7 +139,6 @@ table,
 th,
 td {
   border: 1px solid #fff;
-  color: #fff;
 }
 
 .clubLogos {
@@ -127,13 +148,24 @@ td {
 
 .backA {
   width: 15%;
+  margin-top: 1rem;
   font-size: 2rem;
   margin: 3%;
   height: 2.5rem;
+  border: none;
+  background-color: rgba(52, 187, 34, 0.89);
+  border: 1px solid #fff;
+  color: aliceblue;
+  cursor: pointer;
 }
 
 .end {
   margin: 0;
+}
+
+.tableHead {
+  display: flex;
+  flex-direction: row;
 }
 
 @media only screen and (max-width: 600px) {
@@ -157,9 +189,8 @@ td {
   }
 
   form {
-    width: 40%;
-    border-radius: 8% 8% 0 0;
-    margin: 2%;
+    width: 49%;
+    margin: 0.5rem 0;
   }
 
   th,

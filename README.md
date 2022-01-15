@@ -49,6 +49,10 @@ To get a local copy up and running in your machine:
 - Twitter: [@hamza_tarar10](https://twitter.com/hamza_tarar10)
 - LinkedIn: [Hamza Tarar](https://www.linkedin.com/in/hamzaalitarar/)
 
+## Acknowledgements
+
+- Original design idea by [Nelson Sakwa](https://football-standings-lockless404.netlify.app/) on Behance.
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

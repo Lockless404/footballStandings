@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { IoIosArrowBack } from "react-icons/io";
 import Header from './Header';
 import TableLine from './TableLine';
 
@@ -9,7 +10,10 @@ const Table = () => {
 
   return (
     <div className="App">
-      <Header />
+      <div className="tableHead">
+        <Link className="backA" to="/"><IoIosArrowBack /></Link>
+        <Header />
+      </div>
       <hr />
       <section>
         <table>
@@ -46,7 +50,6 @@ const Table = () => {
           </tbody>
         </table>
       </section>
-      <Link className="backA" to="/">Back</Link>
       <hr className="end" />
     </div>
   );
