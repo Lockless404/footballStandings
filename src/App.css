@@ -148,11 +148,10 @@ td {
 
 .backA {
   width: 15%;
-  margin-top: 1rem;
   font-size: 2rem;
   margin: 3%;
+  margin-top: 1rem;
   height: 2.5rem;
-  border: none;
   background-color: rgba(52, 187, 34, 0.89);
   border: 1px solid #fff;
   color: aliceblue;
