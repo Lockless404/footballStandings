@@ -2,7 +2,7 @@
 const FETCH_LEAGUES = 'FETCH_LEAGUES';
 
 // constant apiUrl
-const leaguesUrl = 'https://api-football-standings.azharimm.site/leagues';
+const leaguesUrl = 'https://api-football-standings.azharimm.dev/leagues';
 
 // intial state
 const initialState = {
